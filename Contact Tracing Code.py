@@ -2,7 +2,7 @@
 # Programmed by: Charina C. Vallecera
 # BSCOE 2-2
 
-file_info = {
+main_file = {
     'Rasha Avery': {'Age': 21, 'Address': 'Pasig City', 'Phone Number': '095656543845'},
     'Mirabel Garcia': {'Age': 32, 'Address': 'Pasay City', 'Phone Number': '09875673424'},
     'Julie Stevens': {'Age': 26, 'Address': 'Cebu City', 'Phone Number': '09315843258'},
@@ -33,12 +33,12 @@ def baseline():
         while True:
             print(">>>>>>> Add New Contact <<<<<<<")
             print()
-            user_input = str(input("Fullname: "))
-            user_age = str(input("Age: "))
-            user_address = str(input("Address: "))
-            user_number = str(input("Phone Number: "))
-            align = user_age + user_address + user_number
-            file.update(align)
+            one = str(input("Fullname: "))
+            two = str(input("Age: "))
+            three = str(input("Address: "))
+            four = str(input("Phone Number: "))
+            align = {'Age': two, 'Address': three, 'Phone': four}
+            main_file = {one:align}
             print()
             print("SAVED!")
             print()
@@ -49,7 +49,7 @@ def baseline():
             print()
             search_input = input("Type the Fullname: ").casefold()
             print(f"\t\t\t{'Fullname': <5s}{'Age': <5s}{'Address': <5s}{'Phone Number': <5s}")
-            file.get(search_input)
+            file_info.get(search_input)
             print(">>>>>>> Contact Found! <<<<<<<")
             print()
 
