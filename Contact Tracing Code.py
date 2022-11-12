@@ -23,16 +23,20 @@ def add():
         print(">>>>>>> Add New Contact <<<<<<<")
         print()
         user_input = input("Fullname: ")
-        file.update(user_input)
         user_age = input("Age: ")
-        file.update(user_age)
         user_address = input("Address: ")
-        file.update(user_address)
         user_number = input("Phone Number: ")
-        file.update(user_number)
-        whole_info = 
+        whole_info = f"\t{user_input: <20}{user_age: <20}{user_address: <60}{user_number: <15}"
+        file.update(whole_info)
         print()
         print("SAVED!")
+        print()
+
+        chance = input("Would you like to add another contact? (yes/no) ")
+        if chance.casefold() == "yes":
+            add()
+        elif chance.casefold() == "no":
+            main_menu()
 
 
 def search():
@@ -43,6 +47,13 @@ def search():
         file.get(search_input)
         print()
         print(">>>>>>> Contact Found! <<<<<<<")
+        print()
+
+        chanceAgain = input("Would you like to search another contact? (yes/no) ")
+        if chanceAgain.casefold() == "yes":
+            add()
+        elif chanceAgain.casefold() == "no":
+            main_menu()
 
 
 def full_tab():
@@ -51,12 +62,12 @@ def full_tab():
         print()
 
 
-
 def exits():
     while True:
         print(">>>>>>> Exit <<<<<<<")
         print()
         print("Thank you for using this program!!!")
+        print("Bye!")
         print()
         break
 
@@ -64,3 +75,5 @@ def exits():
 def coding():
     while True:
         main_menu()
+        final_option = int(input("Choose the number of your choice: "))
+        if final_option
