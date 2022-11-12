@@ -2,14 +2,19 @@
 # Prgrammed by: Charina C. Vallecera
 # BSCOE 2-2
 
-print("Contact Tracing Menu")
-print()
-print(">>>>>>> MENU <<<<<<<")
-print(" 1.) ADD    ")
-print(" 2.) SEARCH ")
-print(" 3.) EXIT   ")
+file = {"Rasha Avery": "21 years old ----  Pasig City  ----  09563742834",
+        "Rhan"}
 
-file = {}
+
+def main_menu():
+    print(">>>>>>> CONTACT TRACING <<<<<<<")
+    print()
+    print(">>>>>>> MENU <<<<<<<")
+    print()
+    print(" 1.) ADD    ")
+    print(" 2.) SEARCH ")
+    print(" 3.) EXIT   ")
+    print()
 
 
 def add():
@@ -37,4 +42,23 @@ def search():
         print()
         print(">>>>>>> Contact Found! <<<<<<<")
 
-def 
+
+def full_tab():
+    while True:
+        print(">>>>>>> List Format <<<<<<<")
+        print()
+        print("Fullname: ", file)
+
+
+def exits():
+    while True:
+        print(">>>>>>> Exit <<<<<<<")
+        print()
+        print("Thank you for using this program!!!")
+        print()
+        break
+
+
+def coding():
+    while True:
+        main_menu()
