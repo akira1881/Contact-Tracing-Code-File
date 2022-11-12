@@ -9,23 +9,25 @@ print(" 1.) ADD    ")
 print(" 2.) SEARCH ")
 print(" 3.) EXIT   ")
 
-file = []
+file = {}
 
 
 def add():
     while True:
         print(">>>>>>> Add New Contact <<<<<<<")
         user_input = input("Fullname: ")
-        file.append(user_input)
+        file.update(user_input)
         user_age = input("Age: ")
-        file.append(user_age)
+        file.update(user_age)
         user_address = input("Address: ")
-        file.append(user_address)
+        file.update(user_address)
         user_number = input("Phone Number: ")
-        file.append(user_number)
+        file.update(user_number)
         print("SAVED!")
 
 def search():
     while True:
         print(">>>>>>> Search Contact <<<<<<<")
+        search_input = input("Type the Fullname")
+        file.get(search_input)
         
