@@ -5,7 +5,7 @@
 file = {"Rasha Avery": "21 years old ----  Pasig City  ----  09563742834",
         "Rhaenyra Edwards": "19 years old ---- Pasay City ---- 09275463249",
         "Ronnie Karev": "22 years old ---- Quezon City ---- 09182745947"}
-
+print(file)
 
 def main_menu():
     print(">>>>>>> CONTACT TRACING <<<<<<<")
@@ -36,7 +36,7 @@ def add():
         if chance.casefold() == "yes":
             add()
         elif chance.casefold() == "no":
-            main_menu()
+            coding()
 
 
 def search():
@@ -53,13 +53,13 @@ def search():
         if chanceAgain.casefold() == "yes":
             add()
         elif chanceAgain.casefold() == "no":
-            main_menu()
+            coding()
 
 
 def full_tab():
     while True:
         print(">>>>>>> List Format <<<<<<<")
-        print()
+        print("")
 
 
 def exits():
@@ -76,4 +76,16 @@ def coding():
     while True:
         main_menu()
         final_option = int(input("Choose the number of your choice: "))
-        if final_option
+        if final_option == "1":
+            add()
+        elif final_option == "2":
+            search()
+        elif final_option == "3":
+            exits()
+        else:
+            print("Invalid input, please try again!")
+            coding()
+
+
+while True:
+    coding()
