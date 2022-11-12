@@ -15,6 +15,7 @@ file = {}
 def add():
     while True:
         print(">>>>>>> Add New Contact <<<<<<<")
+        print()
         user_input = input("Fullname: ")
         file.update(user_input)
         user_age = input("Age: ")
@@ -23,11 +24,17 @@ def add():
         file.update(user_address)
         user_number = input("Phone Number: ")
         file.update(user_number)
+        print()
         print("SAVED!")
+
 
 def search():
     while True:
         print(">>>>>>> Search Contact <<<<<<<")
+        print()
         search_input = input("Type the Fullname")
         file.get(search_input)
-        
+        print()
+        print(">>>>>>> Contact Found! <<<<<<<")
+
+def 
