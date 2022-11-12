@@ -3,7 +3,8 @@
 # BSCOE 2-2
 
 file = {"Rasha Avery": "21 years old ----  Pasig City  ----  09563742834",
-        "Rhan"}
+        "Rhaenyra Edwards": "19 years old ---- Pasay City ---- 09275463249",
+        "Ronnie Karev": "22 years old ---- Quezon City ---- 09182745947"}
 
 
 def main_menu():
@@ -29,6 +30,7 @@ def add():
         file.update(user_address)
         user_number = input("Phone Number: ")
         file.update(user_number)
+        whole_info = 
         print()
         print("SAVED!")
 
@@ -47,7 +49,7 @@ def full_tab():
     while True:
         print(">>>>>>> List Format <<<<<<<")
         print()
-        print("Fullname: ", file)
+
 
 
 def exits():
